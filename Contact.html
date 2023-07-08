@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="conatct.css">
+  <script src="https://kit.fontawesome.com/507afff020.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left"> Ashutosh Pandey</div>
+      <div class="right">
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="/">Resume</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="info">
+      Contact Me
+     </div>
+     <div class="para">Feel Free to get in touch!</div>
+  </main>
+  <div class="container">
+    <div class="row">
+                  
+        <div class="row contact-details">
+           <div class="col-lg-2"></div>
+           <div class="col-lg-4">
+               <div class="light-box box-hover">
+                   <h2><i class="fa fa-file-text"></i><span>Resume</span></h2>
+                   <p><a href="resume.pdf">Download</a>
+                   </p>
+               </div>
+           </div>
+           <div class="col-lg-4">
+               <div class="light-box box-hover">
+                   <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                   <p><a href="">pandeyashu2211@gmail.com</a></p>
+               </div>
+           </div>
+          
+     </div>
+
+
+  </div>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-180px";
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh-Portfolio</title>
+    <link rel="stylesheet" href="index.css">   
+    <script src="https://kit.fontawesome.com/507afff020.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Ashutosh's Portfolio</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple1">Ashutosh Pandey</span>,
+                <div>A computer Science Student,Passionate about  <span id="element"></span></div>
+               
+            </div>
+            <div class="rightSection">
+                <a href="Projects.html"><button id="Work">See my Work</button></a>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Programming','Designing','and','Developing'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-180px";
+        }
+
+      </script>
+</body>
+</html>

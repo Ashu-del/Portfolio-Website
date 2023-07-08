@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  flex-wrap: wrap;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:20px 30px;
+    
+}
+nav ul li a{
+   text-decoration: none;
+   color: black;
+   font-size: 18px;
+   position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+nav ul li a:hover{
+    color: #514e5b;
+    font-size: 1.04rem;
+ }
+ .left{
+    font-size: 1.5rem;
+}
+body{
+    background-color: white;
+    color:#050506;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.head{
+    margin: 24px;
+    text-align: center;
+    font-size: bold;
+    font-family: 'Poppins',sans-serif;
+}
+.divider{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 50px;
+    border-top: 2px solid #b3b3b1;
+    padding-bottom: 40px;
+}
+.selfie{
+    border-radius: 80%;
+}
+img {
+    border-radius: 80%;
+    width: 167px;
+    padding: 5px;
+    margin-top: 25px;
+    display: inline-block;
+}
+img {
+    border: 0;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+.about p{
+    color: #666665;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+
+}
+p {
+    margin: 8px 232px 0px;
+    padding: 20px 2px 0px 6px;
+    display: flex;
+}
+nav .right .fa-solid{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    nav .right .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+   
+
+    nav ul{
+        background: whitesmoke;
+        opacity: 0.8;
+        position: fixed;
+        top:0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 80px;
+        z-index: 2;
+       
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        margin: 8px 4px 10px -2px
+    }
+}
+    

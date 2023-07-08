@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/507afff020.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Ashutosh Pandey</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <main>
+            <section class="head">
+            <h1>About me</h1>
+            <div class="divider"></div>
+            <div class="selfie">
+                <img src="images/Ashu.jpg" alt="Pic">
+            </div>
+            <div class="about">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, quas? Debitis veritatis quae ab labore ad, deserunt minima ratione consequatur?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil quod quasi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure recusandae alias repellat accusamus odio eveniet asperiores itaque consequuntur aspernatur.</p>
+            </div>
+            </section>
+        </main>
+    </header>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-180px";
+        }
+
+      </script>
+</body>
+</html>

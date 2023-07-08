@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Projects.css">
+  <script src="https://kit.fontawesome.com/507afff020.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left"> Ashutosh Pandey</div>
+      <div class="right">
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact Me</a></li>
+          <li><a href="/">Resume</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+    <main>
+      <div id="project">
+        <div class="container">
+          <h1 class="sub-title">Projects</h1>
+          <div class="divider"></div>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png">
+              <div class="layer">
+                <h3>Porfolio</h3>
+                <p>A website show the resume</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png">
+              <div class="layer">
+                <h3>Music-Player</h3>
+                <p>An app that will connect you to music world</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png">
+              <div class="layer">
+                <h3>To-do List</h3>
+                <p>An app that will give day to day </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </header>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-180px";
+    }
+
+  </script>
+</body>
+
+</html>
